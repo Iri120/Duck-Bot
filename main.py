@@ -2,11 +2,13 @@
 # Duck-inspired discord bot
 
 import os
+from dotenv import load_dotenv
 import discord
 from discord.ext import commands
 import datetime
 
-TOKEN = 'OTQyMTE3Mjg0NTM5OTQ5MDU3.Ygf1GA.JSixbrrn2WNrrW6oI8F_mYdzck8'
+load_dotenv()
+TOKEN = os.environ["TOKEN"]
 DISCORD_GUILD = 'Duck Timer'
 
 intents = discord.Intents.default()
